@@ -50,3 +50,15 @@ for (var i = 0; i < dailySchedule.length; i++) {
 }
 }
 
+showTimeColor();
+setInterval(showTimeColor, 10000); 
+
+$(".saveBtn").on("click", function(){
+    userInput = $(this).siblings(".form-control").val().trim();
+    console.log(userInput);
+    hourSpan = $(this).siblings(".input-group-prepend").text().trim();
+    console.log(hourSpan);
+    localStorage.setItem(hourSpan, JSON.stringify(userInput));
+}
+
+(saveBttn.on("click", handleFormSubmit)));
