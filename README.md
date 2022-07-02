@@ -4,12 +4,12 @@ jQuery, BootStrap, and momentJS for its dynamic elements, enabling the user to c
 through differing color-coded rows.
 
 ## Technologies Used
-*HTML
-*CSS
-*JS
-*jQuery
-*Bootstrap
-*moment.js
+- HTML
+- CSS
+- JS
+- jQuery
+- Bootstrap
+- moment.js
 
 
 ## Deployable Link
