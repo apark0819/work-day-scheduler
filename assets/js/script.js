@@ -3,6 +3,13 @@ var today = moment();
 $("#currentDay").text(today.format("MMM Do, YYYY"));
 $("#currentHour").text(today.format("h:mm a"));
 
+function renderer() {
+    for (var el of dailySchedule) {
+        el.val(localStorage.getItem("time block " + el.data("hour")));
+
+    }
+}
+
 //var elements
 var saveBtn = $(".save-icon");
 var containerEl = $(".container");
@@ -42,8 +49,4 @@ for (var i = 0; i < dailySchedule.length; i++) {
     }
 }
 }
-
-showTimeColor();
-setInterval(updateTime, 10000); 
-
 
