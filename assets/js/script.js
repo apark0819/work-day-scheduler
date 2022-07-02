@@ -3,12 +3,6 @@ var today = moment();
 $("#currentDay").text(today.format("MMM Do, YYYY"));
 $("#currentHour").text(today.format("h:mm a"));
 
-function renderer() {
-    for (var el of dailySchedule) {
-        el.val(localStorage.getItem("time block " + el.data("hour")));
-
-    }
-}
 
 //var elements
 var saveBtn = $(".save-icon");
@@ -53,12 +47,14 @@ for (var i = 0; i < dailySchedule.length; i++) {
 showTimeColor();
 setInterval(showTimeColor, 10000); 
 
-$(".saveBtn").on("click", function(){
-    userInput = $(this).siblings(".form-control").val().trim();
+
+
+$(".saveBttn").on("click", function(){
+    userInput = $(this).siblings(".form-control").val();
     console.log(userInput);
-    hourSpan = $(this).siblings(".input-group-prepend").text().trim();
+    hourSpan = $(this).siblings(".input-group-prepend").text();
     console.log(hourSpan);
     localStorage.setItem(hourSpan, JSON.stringify(userInput));
-}
 
-(saveBttn.on("click", handleFormSubmit)));
+  })
+
