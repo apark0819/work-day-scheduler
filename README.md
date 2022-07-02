@@ -8,5 +8,5 @@ through differing color-coded rows.
 https://apark0819.github.io/work-day-scheduler/
 
 ## Screenshot of Application
-![alt text](https://github.com/apark0819/work-day-scheduler/blob/assets/)
+![alt text](https://github.com/apark0819/work-day-scheduler/assets/img/ss1.jpg/)
 ## 
